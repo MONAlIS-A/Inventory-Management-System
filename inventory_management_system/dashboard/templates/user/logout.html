@@ -1,0 +1,22 @@
+{% extends 'common_code/base.html' %}
+{% load static %}
+{% block title %} Logout Page {% endblock %}
+
+
+{% block main-content %}
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <div class="border p-3 bg-white">
+                    <h3>Logout Page</h3>
+                <hr>
+                <div class="alert alert-success">
+                    <strong>You've been logged out successfully.</strong> Please log in again to continue.
+                </div>
+                <a href="{% url 'user-login' %}" class="btn btn-primary">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main-content %}
