@@ -128,6 +128,8 @@ LOGIN_REDIRECT_URL = 'dashboard-home'
 
 LOGIN_URL = 'user-login'  # or your custom login view name
 
+STATIC_ROOT = 'staticfiles'
+
 
 # Base url to serve media files
 MEDIA_URL = '/media/'
